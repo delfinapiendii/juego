@@ -4,37 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aventura Oceánica</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="stylestpo.css">
 </head>
 <body>
     <div class="background-snippet"></div>
-    <header>
-        <nav>
-            <div>
-                <img src="./assets/img/logo-white.png" alt="UADE">
-            </div>
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./about.html">Integrantes</a></li>
-                <li><a href="./contact.html">Avances</a></li>
-                <li><a href="./contact.html">Juegos</a></li>
-            </ul>
-        </nav>
-    </header>
+    
     <main>
+        <div class="game-intro">
+            <h1>Aventura en el océano</h1>
+            <p>¡Recoge toda la basura con las flechas en tu teclado y salva animales!</p>
+
+        </div>
         <div id="game-container">
-            <canvas id="oceano" width="800" height="600"></canvas>
-            <div id="puntos">Puntos: 0</div>
+            <div class="game-info">
+                <h3 id ="puntos">Puntos: 0 </h3>
+                <p id ="mensaje">¡Comienza el juego!</p>
+            </div>
+            <canvas id="oceano"></canvas>
         </div>
         <script src="game.js"></script>
     </main>
-    <footer>
-        <div>
-            <p>UADE - Universidad 🇦🇷 de la Empresa</p>
-            <p>2020</p>
-
-        </div>
-    </footer>
+    
 </body>
 </html>
